@@ -2,16 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Hlavicka dokumentu: nastavenie kodovania, autor, verzia, responzivita, CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marko Papranec">
+    <meta name="date" content="2025-09-16" scheme="YYYY-MM-DD">
+    <meta name="version" content="v1.0">
     <link rel="stylesheet" href="../Assets/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Hlavicka stranky s nazvom a navigaciou -->
     <header>
         <h1>Najlepšie recepty na palacinky</h1>
-        <nav>
+        <nav> 
+            <!-- Navigacne menu na podstranky -->
             <ul>
                 <li><a href="../index.html">Domov</a></li> 
                 <li><a href="../Klasicke_palacinky/klasicke.html">Klasické palacinky</a></li>
@@ -20,22 +26,28 @@
             </ul>
         </nav>
     </header>
+    <!-- Hlavny obsah stranky: kontaktna sekcia -->
     <main class="recipe">
         <h2 class="contact-header">Kontaktujte nás</h2>
+        <!-- Kontakt formular pre odoslanie spravy -->
         <form class="contact-form">
             <label for="name">Meno:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required >
+            
 
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="message">Správa:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" ></textarea>
 
             <button type="submit">Odoslať</button>
         </form>
     </main>
-    <footer><p>&copy; 2024 Recepty na palacinky | Všetky práva vyhradené</p></footer>
+    <!-- Pata stranky s copyrightom -->
+    <footer>
+        <p>&copy; 2024 Recepty na palacinky | Všetky práva vyhradené</p>
+    </footer>
 
 </body>
 
