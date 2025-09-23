@@ -148,3 +148,48 @@ footer {
 .contact-form button:hover {
   background-color: #ffd699;
 }
+
+/* Skryť hamburger na desktop, zobraziť na mobil */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 24px;
+  z-index: 1001;
+}
+
+/* Mobilné menu */
+@media (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffcc80;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    gap: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 1000;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  header {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  header h1 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
