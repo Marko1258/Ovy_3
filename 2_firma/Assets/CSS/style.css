@@ -1,0 +1,107 @@
+:root {
+    --black-color: #111111;
+    --primary-color: #4CAF50;
+    --secondary-color: #a4ddf3;
+    --background-color: #f0f0f0;
+    --body-color: #ffffff;
+    --text-color: #333333;
+    --font-family: 'roboto', sans-serif;
+}
+*{
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.2;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    background-color: var(--black-color);
+    display: fixed;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: var(--body-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: var(--primary-color);
+}
+.hero {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 32px;
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero::after,
+.hero::before {
+    content: '⭐';
+}
+.about-us {
+    padding: 20px;
+}
+.about-us-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.about-us-header::after,
+.about-us-header::before { 
+    content: '⭐';
+}
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.about-us p::first-letter  {
+    font-size: 200%;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.services {
+    background-color:var(--secondary-color);
+    padding: 20px;
+}
+.services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.services-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services-header::after,
+.services-header::before { 
+    content: '⭐';
+}
+footer {
+    background-color: var(--black-color);
+    color: var(--body-color);
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 20px;
+}
+footer p {
+   font-size: 14px;
+}

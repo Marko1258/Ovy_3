@@ -33,7 +33,7 @@ nav ul {
   gap: 20px;
 }
  li a {
-    font-size: 18px;
+  font-size: 18px;
   text-decoration: none;
   color:#8b0000 ;
 }
@@ -85,6 +85,11 @@ footer {
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+}
+.contact-header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-form {
