@@ -8,9 +8,23 @@
 body {
     min-height: 100vh;
     background: url(../Imgs/nyctown.jpg);
-    background-size: cover;
+    animation: movementBG 15s infinite alternate;
+    background-size: 120%;
+
 
 }
+@keyframes movementBG {
+    0% {
+        background-position: 0% 10% ;
+    }
+    50% {
+        background-position: 10% 20% ;
+    }
+    100% {
+        background-position: 0% 30% ;
+    }
+}
+
 .body-2 {
     display: flex;
     justify-content: center;
